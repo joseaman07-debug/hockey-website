@@ -1,0 +1,57 @@
+Build a small website for field hockey with TWO pages:
+
+1) index.html (one-page editorial landing)
+2) skills.html (interactive coaching + practice toolkit)
+
+Create these files:
+- index.html
+- skills.html
+- styles.css
+- skills.js
+- README.md
+
+Design + tone:
+- Editorial, minimal, premium sports vibe.
+- Neutral palette, strong typography, lots of whitespace.
+- Responsive and clean.
+
+index.html requirements (one-page):
+- Sections with anchors: Hero, About, Playing, Coaching, Contact.
+- A prominent button/link in the header and hero: “Skills & Drills” that navigates to skills.html.
+- Copy should be polished English and athletic (not cheesy).
+- Include a small “quick stats” row (e.g., roles, focus areas, location) using simple cards.
+
+skills.html requirements (interactive):
+- Use the SAME header/nav style as index.html.
+- Include a “Back to Home” link (index.html).
+- Interactive toolkit with:
+  A) Drill Library (filterable)
+     - Filters: Skill (Passing / Receiving / Press break / Scanning / Wide-middle), Level (Beginner/Intermediate/Advanced), Time (10/20/30 min)
+     - Show drill cards dynamically based on filters
+  B) Drill Detail Modal or Expandable Card
+     - Each drill shows: objective, setup, steps, coaching cues, progression, common mistakes
+  C) Practice Timer
+     - 10/20/30 minute preset buttons + Start/Pause/Reset
+     - Display remaining time
+  D) Session Builder (simple)
+     - “Add to session” button on drills
+     - Session list appears on the right or bottom
+     - Ability to remove drills + show estimated total time
+
+Seed content (include at least 8 drills):
+- Include drills inspired by this coaching idea:
+  “Routes starting from the 16’ with faster decision-making; press into defenders, create a passing route between them, keep the ball on our side to move the press, then find the wide-middle channel.”
+- Make sure at least 3 drills are about:
+  - connecting defenders under press
+  - moving the press with patience
+  - finding the wide-middle space
+
+Technical:
+- No frameworks. Vanilla HTML/CSS/JS only.
+- skills.html should load skills.js.
+- Keep code well-structured and commented.
+- Make sure GitHub Pages works (relative paths only).
+- Commit everything in a single pull request.
+
+README.md:
+- Explain the two pages and how to deploy on GitHub Pages.
