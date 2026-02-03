@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skills &amp; Drills | Northline Field Hockey</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Northline Field Hockey</a>
+      <nav class="nav">
+        <a href="index.html#about">About</a>
+        <a href="index.html#playing">Playing</a>
+        <a href="index.html#coaching">Coaching</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="btn btn-primary" href="skills.html">Skills &amp; Drills</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Interactive toolkit</p>
+        <h1 class="section-title">Skills &amp; Drills for composed field hockey.</h1>
+        <p class="subtle">
+          Filter the library, build a session, and keep the tempo purposeful. Each drill
+          mirrors game pressure from the 16-yard outlet to the wide-middle release.
+        </p>
+        <div class="tools-row" style="margin-top: 1.5rem;">
+          <a class="btn btn-ghost" href="index.html">Back to Home</a>
+          <button class="btn btn-primary" id="random-drill">Random drill</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="toolkit">
+      <div class="container">
+        <div class="filters">
+          <div class="filter-group">
+            <label for="search">Search drills</label>
+            <input type="text" id="search" placeholder="Search by name or focus" />
+          </div>
+          <div class="filter-group">
+            <label for="skill-filter">Skill focus</label>
+            <select id="skill-filter">
+              <option value="all">All skills</option>
+              <option value="Passing">Passing</option>
+              <option value="Receiving">Receiving</option>
+              <option value="Press break">Press break</option>
+              <option value="Scanning">Scanning</option>
+              <option value="Wide-middle">Wide-middle</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="level-filter">Level</label>
+            <select id="level-filter">
+              <option value="all">All levels</option>
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Advanced">Advanced</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="time-filter">Time</label>
+            <select id="time-filter">
+              <option value="all">Any duration</option>
+              <option value="10">10 min</option>
+              <option value="20">20 min</option>
+              <option value="30">30 min</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="toolkit-grid">
+          <div>
+            <div id="drill-grid" class="drill-grid"></div>
+
+            <div class="timer">
+              <h2>Practice timer</h2>
+              <p class="subtle">Preset intervals for sharp, focused work.</p>
+              <div class="button-row" style="margin-top: 1rem;">
+                <button class="btn btn-ghost" data-minutes="10">10 min</button>
+                <button class="btn btn-ghost" data-minutes="20">20 min</button>
+                <button class="btn btn-ghost" data-minutes="30">30 min</button>
+              </div>
+              <div class="timer-display" id="timer-display">20:00</div>
+              <div class="button-row">
+                <button class="btn btn-primary" id="start-timer">Start</button>
+                <button class="btn btn-ghost" id="pause-timer">Pause</button>
+                <button class="btn btn-ghost" id="reset-timer">Reset</button>
+              </div>
+            </div>
+          </div>
+
+          <aside class="session-panel">
+            <h2>Session builder</h2>
+            <p class="notice">Curate a progression and save it for next time.</p>
+            <ul class="session-list" id="session-list"></ul>
+            <p class="session-total">Estimated total: <span id="session-total">0</span> min</p>
+            <div class="button-row" style="margin-top: 1rem;">
+              <button class="btn btn-ghost" id="clear-session">Clear session</button>
+              <button class="btn btn-primary" id="print-session">Print session</button>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Build consistent habits with sessions that respect time and pressure.</p>
+    </div>
+  </footer>
+
+  <script src="skills.js"></script>
+</body>
+</html>
